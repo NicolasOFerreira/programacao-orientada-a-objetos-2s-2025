@@ -1,10 +1,51 @@
 package sistema_radar;
 
 public class Carro {
-    public String placa;
-    public Integer velocidade;
-    public Integer ano;
-    public String modelo;
+    private String placa;
+    private Integer velocidade;
+    private Integer ano;
+    private String modelo;
+
+    public Carro(String placa, Integer velocidade, Integer ano, String modelo){
+        this.placa = placa;
+        this.velocidade = velocidade;
+        this.ano = ano;
+        this.modelo = modelo;
+    }
+
+    public String getPlaca(){
+        return this.placa;
+    }
+
+    public void setPlaca(){
+        this.placa = placa;
+    }
+   
+    public Integer getVelocidade(){
+        return this.velocidade;
+    }
+
+    public void setVelocidade(Integer velocidade){
+        if(velocidade >= 0){
+            this.velocidade = velocidade;
+        }
+    }
+
+    public Integer getAno(){
+        return this.ano;
+    }
+
+    public void setAno(){
+        this.ano = ano;
+    }
+
+    public String getModelo(){
+        return this.modelo;
+    }
+
+    public void setModelo(){
+        this.modelo = modelo;
+    }
 
     public void acelerar(){
         this.velocidade += 10;
