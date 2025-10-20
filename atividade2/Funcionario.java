@@ -17,7 +17,7 @@ public class Funcionario extends Pessoa{
     @Override
     public void exibirInfo() {
         System.out.println("Nome: " + this.getNome());
-        System.out.println("E-mail: " + this.getEmail());
+        System.out.println("e-mail: " + this.getEmail());
         System.out.println("Cargo: " + this.cargo);
     }
 }

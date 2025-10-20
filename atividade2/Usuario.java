@@ -17,7 +17,8 @@ public class Usuario extends Pessoa{
     @Override
     public void exibirInfo() {
         System.out.println("Nome: " + this.getNome());
-        System.out.println("E-mail: " + this.getEmail());
-        System.out.println("Matricula: " + this.matricula);
+        System.out.println("e-mail: " + this.getEmail());
+        System.out.println("Matrícula: " + this.matricula);
     }
+
 }
